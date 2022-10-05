@@ -30,6 +30,11 @@ namespace RaceTrack.RaceTrack.Cars
 
         public abstract void StartEngine();
 
+        public virtual void StopEngine()
+        {
+            Console.WriteLine($"The {Name}s engine stops");
+        }
+
         public virtual void Brake()
         {
             Console.WriteLine($"The {Name} ends in position {Position}!");
